@@ -62,10 +62,10 @@ export default {
           property: false
         },
         endpoints: {
-          login: {url: '/api/login', method: 'post'},
-          logout: {url: '/api/logout', method: 'post'},
-          user: {url: '/api/user', method: 'get'},
-          register: {url: '/api/register', method: 'post'},
+          login: {url: 'https://lentrix.tk/verano/api/login', method: 'post'},
+          logout: {url: 'https://lentrix.tk/verano/api/logout', method: 'post'},
+          user: {url: 'https://lentrix.tk/verano/api/user', method: 'get'},
+          register: {url: 'https://lentrix.tk/verano/api/register', method: 'post'},
         }
       }
     },
@@ -78,7 +78,7 @@ export default {
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
-    baseUrl: 'http://localhost:8000'
+    baseUrl: 'https://lentrix.tk/verano'
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build

@@ -52,7 +52,7 @@ export default {
     },
     methods: {
         async getAll() {
-            await this.$axios.get('/api/cars')
+            await this.$axios.get('https://lentrix.tk/verano/api/cars')
             .then((res)=>{
                 if (res.status==200) {
                     this.cars = res.data

@@ -42,7 +42,7 @@ export default {
     },
     methods: {
         async onSubmit() {
-            this.$axios.post('/api/cars', this.cars)
+            this.$axios.post('https://lentrix.tk/verano/api/cars', this.cars)
             .then((res)=>{
                 if(res.status==202) {
                     alert('Successfully added a car')

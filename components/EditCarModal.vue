@@ -43,7 +43,7 @@ export default {
     },
     methods: {
         async onSubmit() {
-            this.$axios.put('/api/cars/' + this.cars.id, this.cars)
+            this.$axios.put('https://lentrix.tk/verano/api/cars/' + this.cars.id, this.cars)
             .then((res)=>{
                 if(res.status==202) {
                     alert('Edit successful!')

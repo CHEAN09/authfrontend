@@ -15,7 +15,7 @@ export default {
     },
     methods: {
         async onDelete() {
-            this.$axios.delete('/api/cars/' + this.cars.id)
+            this.$axios.delete('https://lentrix.tk/verano/api/cars/' + this.cars.id)
             .then((res)=>{
                 if(res.status==202) {
                     alert('Deleted successfully!')
